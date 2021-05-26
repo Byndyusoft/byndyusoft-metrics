@@ -7,7 +7,7 @@ namespace Byndyusoft.Metrics.ActivitySources
 {
     public class TestActivitySource
     {
-        private static readonly ActivitySource ActivitySource = new(typeof(TestActivitySource).FullName ?? string.Empty);
+        private static readonly ActivitySource ActivitySource = new ActivitySource(typeof(TestActivitySource).FullName ?? string.Empty);
 
         public void TestOperationWithActivity()
         {

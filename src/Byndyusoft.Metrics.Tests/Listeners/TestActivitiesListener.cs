@@ -7,8 +7,8 @@ namespace Byndyusoft.Metrics.Listeners
 {
     public class TestActivitiesListener : ActivityListenerBase
     {
-        private readonly Dictionary<string, int> _operationStartCounters = new();
-        private readonly Dictionary<string, int> _operationStopCounters = new();
+        private readonly Dictionary<string, int> _operationStartCounters = new Dictionary<string, int>();
+        private readonly Dictionary<string, int> _operationStopCounters = new Dictionary<string, int>();
 
         protected override void ActivityStarted(Activity activity)
         {
